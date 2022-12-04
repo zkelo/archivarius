@@ -42,7 +42,7 @@ class HashCommand extends Command
     /**
      * {@inheritDoc}
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $saveFilename = $input->getArgument('filename');
         $output->writeln('Filename to save: <info>' . $saveFilename . '</>');

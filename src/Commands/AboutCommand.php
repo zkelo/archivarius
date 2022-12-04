@@ -32,7 +32,7 @@ class AboutCommand extends Command
     /**
      * {@inheritDoc}
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln('<question><3</> You\'re running <info>' . $this->getApplication()->getName() . ' ' . $this->getApplication()->getVersion() . '</>');
         $output->writeln('<comment>App that helps you to work with your family photo and video archive.</>');

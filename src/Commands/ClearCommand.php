@@ -26,7 +26,7 @@ class ClearCommand extends Command
     /**
      * {@inheritDoc}
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $finder = new Finder;
         $finder->files()->in(DATA_DIRECTORY)->exclude('gitignore');
