@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Zkelo\\Archivarius\\": "src/"
+            "zkelo\\Archivarius\\": "src/"
         }
     },
     "authors": [
