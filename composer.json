@@ -1,0 +1,19 @@
+{
+    "name": "zkelo/archivarius",
+    "description": "A PHP app that helps you to work with family photo and video archives",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Zkelo\\Archivarius\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aleksandr \"ZKelo\" Ryabov",
+            "email": "zkelo@yandex.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
