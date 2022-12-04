@@ -34,6 +34,7 @@ class ClearCommand extends Command
         $filesystem = new Filesystem;
         $filesystem->remove($finder);
 
+        $output->writeln('<comment>Data directory cleared</>');
         return Command::SUCCESS;
     }
 }
