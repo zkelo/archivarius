@@ -81,7 +81,7 @@ class HashCommand extends Command
 
         $progressBar = new ProgressBar($output, $filesCount);
 
-        /* foreach ($finder as $file) {
+        foreach ($finder as $file) {
             $filepath = $file->getRealPath();
             $filename = $file->getRelativePathname();
 
@@ -92,7 +92,7 @@ class HashCommand extends Command
 
             fputcsv($saveFile, [$filepath, $filename, $hash]);
             $progressBar->advance();
-        } */
+        }
 
         fclose($saveFile);
         $progressBar->finish();
