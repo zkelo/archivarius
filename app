@@ -7,6 +7,7 @@ use Symfony\Component\Console\Application;
 use Zkelo\Archivarius\Commands\{
     AboutCommand,
     ClearCommand,
+    DuplicatesCommand,
     HashCommand
 };
 
@@ -30,5 +31,6 @@ $app = new Application(APP_NAME, APP_VERSION);
 $app->add(new AboutCommand);
 $app->add(new HashCommand);
 $app->add(new ClearCommand);
+$app->add(new DuplicatesCommand);
 
 $app->run();
