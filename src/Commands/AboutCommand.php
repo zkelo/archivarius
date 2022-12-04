@@ -34,7 +34,7 @@ class AboutCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln('<question><3</> You\'re running an <info>' . $this->getApplication()->getName() . ' ' . $this->getApplication()->getVersion() . '</>');
+        $output->writeln('<question><3</> You\'re running <info>' . $this->getApplication()->getName() . ' ' . $this->getApplication()->getVersion() . '</>');
         $output->writeln('<comment>App that helps you to work with your family photo and video archive.</>');
 
         $output->writeln(['', '<question>???</> <info>What this app can do?</>']);
