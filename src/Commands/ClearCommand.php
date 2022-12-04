@@ -31,6 +31,11 @@ class ClearCommand extends Command
         $finder = new Finder;
         $finder->files()->in(DATA_DIRECTORY)->exclude('gitignore');
 
+        if (!$finder->hasResults()) {
+            $output->writeln('<info>Data directory is clean</>');
+            return Command::SUCCESS;
+        }
+
         $filesystem = new Filesystem;
         $filesystem->remove($finder);
 
