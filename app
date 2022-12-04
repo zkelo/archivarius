@@ -17,5 +17,7 @@ const APP_NAME = 'Archivarius';
 const APP_VERSION = '1.0';
 
 $app = new Application(APP_NAME, APP_VERSION);
+
 $app->add(new AboutCommand);
+
 $app->run();

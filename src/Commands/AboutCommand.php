@@ -14,6 +14,11 @@ class AboutCommand extends Command
     /**
      * {@inheritDoc}
      */
+    protected static $defaultName = 'about';
+
+    /**
+     * {@inheritDoc}
+     */
     protected static $defaultDescription = 'Displays information about application';
 
     /**
