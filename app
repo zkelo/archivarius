@@ -6,6 +6,7 @@ require __DIR__ . '/vendor/autoload.php';
 use Symfony\Component\Console\Application;
 use Zkelo\Archivarius\Commands\{
     AboutCommand,
+    ClearCommand,
     HashCommand
 };
 
@@ -28,5 +29,6 @@ $app = new Application(APP_NAME, APP_VERSION);
 
 $app->add(new AboutCommand);
 $app->add(new HashCommand);
+$app->add(new ClearCommand);
 
 $app->run();
