@@ -15,5 +15,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "symfony/console": "^6.2"
+    }
 }
