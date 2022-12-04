@@ -41,6 +41,10 @@ class AboutCommand extends Command
         $output->writeln('1. Looking for same photos and videos by hashing each with sha1 algorithm;');
         $output->writeln('2. With 1 step, remove duplicates from your archive (with or without backing it up).');
 
+        $year = date('Y');
+        $output->writeln(['', '<question>***</>']);
+        $output->writeln('Copyright &copy; ' . $year . ' <href=https://zkelo.ru>ZKelo</>');
+
         return Command::SUCCESS;
     }
 }
