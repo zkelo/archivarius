@@ -5,12 +5,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "zkelo\\Archivarius\\": "src/"
+            "Zkelo\\Archivarius\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Aleksandr \"ZKelo\" Ryabov",
+            "name": "Aleksandr Ryabov",
             "email": "zkelo@yandex.ru"
         }
     ],

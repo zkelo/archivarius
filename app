@@ -4,6 +4,7 @@
 require __DIR__ . '/vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
+use Zkelo\Archivarius\Commands\AboutCommand;
 
 /**
  * Application name
@@ -16,4 +17,5 @@ const APP_NAME = 'Archivarius';
 const APP_VERSION = '1.0';
 
 $app = new Application(APP_NAME, APP_VERSION);
+$app->add(new AboutCommand);
 $app->run();
