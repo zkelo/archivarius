@@ -21,11 +21,6 @@ use Symfony\Component\Finder\Finder;
 class HashCommand extends Command
 {
     /**
-     * Data directory name
-     */
-    const DATA_DIRECTORY = 'data';
-
-    /**
      * {@inheritDoc}
      */
     protected static $defaultName = 'hash';
@@ -77,7 +72,7 @@ class HashCommand extends Command
 
         $output->writeln('Processing files...');
 
-        $saveFile = fopen(static::DATA_DIRECTORY . DIRECTORY_SEPARATOR . $saveFilename, 'w');
+        $saveFile = fopen(DATA_DIRECTORY . DIRECTORY_SEPARATOR . $saveFilename, 'w');
         fputcsv($saveFile, [
             'filepath',
             'filename',
@@ -86,7 +81,7 @@ class HashCommand extends Command
 
         $progressBar = new ProgressBar($output, $filesCount);
 
-        foreach ($finder as $file) {
+        /* foreach ($finder as $file) {
             $filepath = $file->getRealPath();
             $filename = $file->getRelativePathname();
 
@@ -97,7 +92,7 @@ class HashCommand extends Command
 
             fputcsv($saveFile, [$filepath, $filename, $hash]);
             $progressBar->advance();
-        }
+        } */
 
         fclose($saveFile);
         $progressBar->finish();
