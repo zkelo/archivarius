@@ -3,12 +3,13 @@
 namespace Zkelo\Archivarius\Commands;
 
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Helper\ProgressBar;
-use Symfony\Component\Console\Helper\QuestionHelper;
+use Symfony\Component\Console\Helper\{
+    ProgressBar,
+    QuestionHelper
+};
 use Symfony\Component\Console\Input\{
     InputArgument,
-    InputInterface,
-    InputOption
+    InputInterface
 };
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
